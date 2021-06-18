@@ -22,6 +22,10 @@ a:hover {
   color: #16D9E3;
 }
 
+button {
+  margin-left: 15px;
+  
+}
 .start {
   font-size: 1.5rem;
 }

@@ -52,9 +52,11 @@ function setTime(value) {
 
 function finishGame() {
     timeEl.parentNode.remove() 
-    board.innerHTML = `<h1>Your score: <span class='primary'>${score}</span></h1>`
+    board.innerHTML = 
+    `<h1>Your score: <span class='primary'>${score}</span></h1>
+    <button value="Refresh Page" onClick="history.go(0);">Start again</button>`
+   
 }
-
 
 function getRandomColor() { 
     return colors[Math.floor(Math.random() * colors.length)]
